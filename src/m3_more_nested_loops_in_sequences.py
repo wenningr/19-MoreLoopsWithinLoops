@@ -432,9 +432,6 @@ def first_is_elsewhere_too(seq_seq):
 
     if len(seq_seq[0]) == 0:
         return False
-    number = -math.inf
-    if len(seq_seq) == 1:
-        return False
     for k in range(1, len(seq_seq)):
         for j in range(len(seq_seq[k])):
             for i in range(len(seq_seq[0])):
